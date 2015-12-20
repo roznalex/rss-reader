@@ -1,0 +1,12 @@
+.list-group-item {
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
+padding-right: 35px;
+}
+
+.list-group span {
+position: absolute;
+right: 15px;
+top: 12px;
+}
