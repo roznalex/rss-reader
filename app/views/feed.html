@@ -1,0 +1,15 @@
+<div ng-controller="feedController">
+	<div class="row" ng-if="feeds">
+		<div class="col-lg-11">
+			<div class="list-group">
+				<a href="#" class="list-group-item"
+					ng-repeat="feed in feeds" ng-click="selectFeed($event, feed)">
+					{{feed.title}}
+				</a>
+			</div>
+		</div>
+	</div>
+	<div ng-if="feeds.length === 0">
+		<h1 class="text-center">No results found</h1>
+	</div>
+</div>

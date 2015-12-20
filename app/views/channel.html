@@ -1,0 +1,26 @@
+<div ng-controller="channelController">
+	<div class="row">
+		<div class="col-lg-11">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Url" ng-model="url">
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button"
+					 ng-click="addChannel($event)">
+						<span class="glyphicon glyphicon-plus"></span>
+					</button>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-11">
+			<div class="list-group">
+				<a href="#" class="list-group-item"
+					ng-repeat="channel in channels" ng-click="selectChannel($event, channel)">
+					{{channel.url}}
+					<span class="glyphicon glyphicon-minus pull-right" ng-click="removeChannel($event, channel.url)"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

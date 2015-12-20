@@ -1,0 +1,11 @@
+<div ng-controller="statisticController">
+	<div kendo-chart
+		k-options="chart"
+		k-rebind="chart">
+	</div>
+	<div>
+		<h2 class="text-center"> Channels: {{statistic.channelAmount}}</h2>
+		<br>
+		<h2 class="text-center"> Feeds: {{statistic.feedAmount}} </h2>
+	</div>
+</div>
